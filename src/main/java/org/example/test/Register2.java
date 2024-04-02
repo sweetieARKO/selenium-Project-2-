@@ -31,6 +31,7 @@ public class Register2 {
         public void Register() {
             Register register = new Register(driver);
             register.setSign();
+
     }
 
 

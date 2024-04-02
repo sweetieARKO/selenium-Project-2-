@@ -1,6 +1,7 @@
 package org.example;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.example.listOfElements.Login;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,6 +21,7 @@ public class Login2{
     }
     @Test
     public void Test(){
-
+        Login signin = new Login(driver);
+      signin.setLogin();
     }
 }
