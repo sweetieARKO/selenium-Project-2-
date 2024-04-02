@@ -30,7 +30,7 @@ public class Register {
     By email = By.xpath("//input[@id='Email']");
    By Company = By.xpath("//input[@id='Company']");
     By telephone = By.id("input-telephone");
-
+    By newsletter = By.xpath("//*[@id='Newsletter']");
     By password = By.id("input-password");
     By confirm = By.id("input-confirm");
 
@@ -48,7 +48,7 @@ public class Register {
         yearSelect.selectByVisibleText("1999");
         driver.findElement(email).sendKeys(username+"@gmail.com");
         driver.findElement(Company).sendKeys("Amalitech company limited");
-
+        driver.findElement(newsletter).click();
         driver.findElement(password).sendKeys("abiail1223&Arko");
         driver.findElement(confirm).sendKeys("abiail1223&Arko");
     }
