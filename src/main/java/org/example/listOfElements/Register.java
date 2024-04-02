@@ -29,6 +29,7 @@ public class Register {
 
     By email = By.xpath("//input[@id='Email']");
    By Company = By.xpath("//input[@id='Company']");
+    By telephone = By.id("input-telephone");
     By newsletter = By.xpath("//*[@id='Newsletter']");
     By password = By.id("input-password");
     By confirm = By.id("input-confirm");
